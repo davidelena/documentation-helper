@@ -1,0 +1,39 @@
+{
+  "session_id": "C2BF6D3D-D9DA-4E5A-9B4D-C7120C422B22",
+  "parent_session_id": null,
+  "state": "stopped",
+  "state_version": 1,
+  "started_at": "2026-06-07T17:08:11Z",
+  "updated_at": "2026-06-07T17:14:07Z",
+  "resume_token": "C5557A67-EA8E-48B9-B84B-2F33BCA81842",
+  "event_seq": 4,
+  "last_event_id": "event-000004",
+  "fork_count": 0,
+  "orchestration": {
+    "max_state_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "cwd": "/Users/dailiwei/PycharmProjects/documentation-helper",
+  "project_name": "documentation-helper",
+  "prompt_seq": 2,
+  "git": {
+    "branch": "main",
+    "uncommitted_changes": 6,
+    "last_commit": "f15bb80"
+  },
+  "plans": {
+    "exists": false,
+    "last_modified": 0,
+    "wip_tasks": 0,
+    "todo_tasks": 0,
+    "pending_tasks": 0,
+    "completed_tasks": 0
+  },
+  "changes_this_session": [],
+  "intent": "literal",
+  "last_message_length": 1386,
+  "last_message_hash": "5b3d67935c709122",
+  "ended_at": "2026-06-07T17:14:07Z",
+  "duration_minutes": 485,
+  "memory_logged": true
+}
