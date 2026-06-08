@@ -88,6 +88,10 @@ async def main():
     """Main async function to orchestrate the entire process."""
     log_header("DOCUMENTATION INGESTION PIPELINE")
 
+    log_info("🗑️  Pinecone: Deleting all existing vectors before re-indexing", Colors.YELLOW)
+    vectorstore.delete(delete_all=True)
+    log_success("Pinecone: Index cleared successfully")
+
     log_info(
         "🗺️  TavilyCrawl: Starting to crawl the documentation site",
         Colors.PURPLE,
