@@ -98,14 +98,15 @@ async def main():
     )
     # Crawl the documentation site
 
+
     res = tavily_crawl.invoke(
         {
             "url": "https://python.langchain.com/",
             "max_depth": 2,
             "extract_depth": "advanced",
+            "instruction": ""
         }
     )
-
     # Convert Tavily crawl results to LangChain Document objects
     all_docs = []
     for tavily_crawl_result_item in res["results"]:
