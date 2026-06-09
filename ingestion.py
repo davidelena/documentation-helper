@@ -29,10 +29,10 @@ embeddings = OpenAIEmbeddings(
     chunk_size=50,
     retry_min_seconds=10,
 )
-# vectorstore = Chroma(persist_directory="chroma_db", embedding_function=embeddings)
-vectorstore = PineconeVectorStore(
-    index_name="langchain-doc-2026", embedding=embeddings
-)
+vectorstore = Chroma(persist_directory="chroma_db", embedding_function=embeddings)
+# vectorstore = PineconeVectorStore(
+#     index_name="langchain-doc-2026", embedding=embeddings
+# )
 tavily_extract = TavilyExtract()
 tavily_map = TavilyMap(max_depth=5, max_breadth=20, max_pages=1000)
 tavily_crawl = TavilyCrawl()
@@ -88,9 +88,10 @@ async def main():
     """Main async function to orchestrate the entire process."""
     log_header("DOCUMENTATION INGESTION PIPELINE")
 
-    log_info("🗑️  Pinecone: Deleting all existing vectors before re-indexing", Colors.YELLOW)
-    vectorstore.delete(delete_all=True)
-    log_success("Pinecone: Index cleared successfully")
+    log_info("🗑️  Chroma: Deleting all existing vectors before re-indexing", Colors.YELLOW)
+    # vectorstore.delete(delete_all=True)  # Pinecone
+    vectorstore.reset_collection()  # Chroma
+    log_success("Chroma: Index cleared successfully")
 
     log_info(
         "🗺️  TavilyCrawl: Starting to crawl the documentation site",
