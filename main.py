@@ -27,7 +27,7 @@ if "messages" not in st.session_state:
         {
             "role": "assistant",
             "content": "Ask me anything about LangChain docs. I’ll retrieve relevant context and cite sources.",
-            "sources": [],
+            "sources": ["www.langchain.com", "www.anthropic.com"],
         }
     ]
 

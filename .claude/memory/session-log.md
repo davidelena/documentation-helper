@@ -50,3 +50,24 @@
 - （必要に応じて追記）
 
 ---
+
+## セッション: 2026-06-20T11:24:31Z
+
+- session_id: `A1B7CC2F-D8B5-484C-AFD1-443781843151`
+- project: `documentation-helper`
+- branch: `main`
+- started_at: `2026-06-20T11:22:03Z`
+- ended_at: `2026-06-20T11:24:31Z`
+- duration_minutes: 482
+- changes: 0
+
+### 変更ファイル
+- （なし）
+
+### 重要な変更（important=true）
+- （なし）
+
+### 次回への引き継ぎ（任意）
+- （必要に応じて追記）
+
+---

@@ -1,14 +1,8 @@
 {
-  "C2BF6D3D-D9DA-4E5A-9B4D-C7120C422B22": {
-    "short_id": "C2BF6D3D-D9D",
-    "last_seen": 1780852091,
-    "pid": "76212",
-    "status": "active"
-  },
-  "B0080A37-78E2-41AF-AEF0-FF33BADD3535": {
-    "short_id": "B0080A37-78E",
-    "last_seen": 1780923162,
-    "pid": "89045",
+  "A1B7CC2F-D8B5-484C-AFD1-443781843151": {
+    "short_id": "A1B7CC2F-D8B",
+    "last_seen": 1781954523,
+    "pid": "4126",
     "status": "active"
   }
 }
